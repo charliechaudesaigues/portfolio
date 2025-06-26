@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Data Analyst – [Charlie Chaudesaigues]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #1e3a5f;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    .viz {
+      margin: 2rem 0;
+    }
+    .viz iframe,
+    .viz object,
+    .viz .tableauPlaceholder,
+    .viz .flourish-embed {
+      width: 100%;
+      border: none;
+    }
+    .contact {
+      background: #197f7f;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .contact a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    a {
+      color: #1e3a5f;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Portfolio Data Analyst</h1>
+    <p>Par [Charlie Chaudesaigues] – <a href="mailto:charlie.chaudesaigues@etik.com">Contact</a></p>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+
+    <!-- À PROPOS -->
+    <h2>À propos</h2>
+    <p>Bienvenue sur mon portfolio ! Je suis passionné par l’analyse de données, la visualisation interactive et la mise en récit de grandes tendances. Vous trouverez ici mes travaux autour de l’évolution mondiale de la démocratie et de la montée des régimes autoritaires.</p>
+
+    <!-- PROJETS PHARES MENU -->
+    <h2>Projets phares</h2>
+    <div>
+      <h3>Montée du fascisme et déclin démocratique (2006–2024)</h3>
+      <p>
+        <strong>Objectif :</strong> Analyser le déclin global de la démocratie, identifier les pays à risque et mettre en avant les signaux de montée autoritaire.<br>
+        <strong>Méthodes :</strong> Python (Google Colab), Tableau Public, Flourish.
+      </p>
+      <ul>
+        <li><a href="#tableau">Carte choroplèthe – Tableau Public</a></li>
+        <li><a href="#bar-chart">Course des régimes (Bar Chart Race) – Flourish</a></li>
+        <li><a href="#scatter">Pays à risque (Scatter Plot animé) – Flourish</a></li>
+        <li><a href="#notebook">Notebook interactif – Google Colab</a></li>
+      </ul>
+    </div>
+
+    <!-- TABLEAU PUBLIC -->
+    <h2 id="tableau">Carte choroplèthe – Tableau Public</h2>
+    <div class="viz">
+      <div class="tableauPlaceholder" id="viz1750923192173" style="position: relative;">
+        <noscript>
+          <a href="#"><img alt="État de la Démocratie Mondiale en 2024 – Index EIU"
+            src="https://public.tableau.com/static/images/Ta/TableauPublicFascismeDmocratie/Feuille1/1_rss.png"
+            style="border: none;" /></a>
+        </noscript>
+        <object class="tableauViz" style="display:none;">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="embed_code_version" value="3" />
+          <param name="site_root" value="" />
+          <param name="name" value="TableauPublicFascismeDmocratie/Feuille1" />
+          <param name="tabs" value="no" />
+          <param name="toolbar" value="yes" />
+          <param name="static_image"
+            value="https://public.tableau.com/static/images/Ta/TableauPublicFascismeDmocratie/Feuille1/1.png" />
+          <param name="animate_transition" value="yes" />
+          <param name="display_static_image" value="yes" />
+          <param name="display_spinner" value="yes" />
+          <param name="display_overlay" value="yes" />
+          <param name="display_count" value="yes" />
+          <param name="language" value="fr-FR" />
+        </object>
+      </div>
+      <script type="text/javascript">
+        var divElement = document.getElementById("viz1750923192173");
+        var vizElement = divElement.getElementsByTagName("object")[0];
+        vizElement.style.width = "100%";
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + "px";
+        var scriptElement = document.createElement("script");
+        scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+
+    <!-- BAR CHART RACE FLOURISH -->
+    <h2 id="bar-chart">Course des régimes (Bar Chart Race) – Flourish</h2>
+    <div class="viz">
+      <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/23934523">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+        <noscript>
+          <img src="https://public.flourish.studio/visualisation/23934523/thumbnail"
+            width="100%" alt="bar-chart-race visualization" />
+        </noscript>
+      </div>
+    </div>
+
+    <!-- SCATTER PLOT FLOURISH -->
+    <h2 id="scatter">Pays à risque (Scatter Plot animé) – Flourish</h2>
+    <div class="viz">
+      <div class="flourish-embed flourish-scatter" data-src="visualisation/23935010">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+        <noscript>
+          <img src="https://public.flourish.studio/visualisation/23935010/thumbnail"
+            width="100%" alt="scatter visualization" />
+        </noscript>
+      </div>
+    </div>
+
+    <!-- NOTEBOOK COLAB -->
+    <h2 id="notebook">Notebook interactif – Google Colab</h2>
+    <p>
+      Consultez l’ensemble du code, le storytelling et les visualisations interactives dans mon notebook Colab :
+    </p>
+    <p>
+      <a href="https://colab.research.google.com/drive/1nVuqjU8Rdmdx-xoCIeWrJY5s2ZLNYnFZ?usp=sharing" target="_blank">
+        👉 Ouvrir le notebook Google Colab
+      </a>
+    </p>
+
+    <!-- COMPÉTENCES -->
+    <h2>Compétences & Outils</h2>
+    <ul>
+      <li>Python (Pandas, Plotly, ipyvizzu-story)</li>
+      <li>Tableau Public (JavaScript API pour intégration)</li>
+      <li>Flourish Studio (embed.js pour visualisations animées)</li>
+      <li>Nettoyage et manipulation de données</li>
+      <li>Storytelling interactif et narratif</li>
+    </ul>
+
+    <!-- CONTACT & CV -->
+    <h2>CV & Contact</h2>
+    <div class="contact">
+      <p>
+        <a href="assets/CV.pdf" target="_blank">📄 Télécharger mon CV (PDF)</a><br>
+        📧 Email : <a href="mailto:charlie.chaudesaigues@etik.com">charlie.chaudesaigues@etik.com</a>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
